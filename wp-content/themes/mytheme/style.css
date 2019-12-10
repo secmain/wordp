@@ -45,3 +45,103 @@ body *::before,
 body *::after {
 	box-sizing: inherit;
 }
+
+:root {
+	--f1: 2.44em; /*  */
+	--f2: 1.95em; /*  */
+	--f3: 1.56em; /*  */
+	--f4: 1.25em; /* 20px */
+	--f5: 1em; /* 16px */
+	--f6: 0.8em; /* 12.8px */
+	--basecolor: #63a211;
+}
+
+body,
+.editor-post-title__input {
+	font-family: sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+p {
+	line-height: 1.8;
+	font-size: var(--f5);
+}
+
+h1 {
+	font-size: var(--f1);
+}
+h2 {
+	font-size: var(--f2);
+}
+h3 {
+	font-size: var(--f3);
+}
+h4 {
+	font-size: var(--f4);
+}
+h5 {
+	font-size: var(--f5);
+}
+h6 {
+	font-size: var(--f6);
+}
+
+h2 {
+	border-left:
+	solid 14px var(--basecolor);
+	padding-left: 14px;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	opacity: 0.5;
+}
+
+.mycontainer {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+@media (min-width: 740px) {
+	.mycontainer {
+		max-width: 720px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.wp-block {
+	max-width: calc(720px + 30px);
+}
+
+.mypostead {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.post-categories {
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	list-style-type: none;
+}
+
+.post-categories li:not(:last-child) {
+	margin-right: 10px;
+}
+
+.post-categories a {
+	padding: 10px;
+	border: solid 1px currentColor;
+	border-radius: 10px;
+	color: var(--basecolor);
+	font-size: var(--f6);
+}
