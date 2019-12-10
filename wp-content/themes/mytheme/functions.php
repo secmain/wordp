@@ -17,6 +17,17 @@ add_action('after_setup_theme', 'mytheme_setup');
 
 function mytheme_enqueue() {
 	wp_enqueue_style(
+		'myfonts',
+		'https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap',
+		array(),
+		null
+	);
+
+	wp_enqueue_style(
+		'dashicons'
+	);
+
+	wp_enqueue_style(
 		'mytheme-style',
 		get_stylesheet_uri(),
 		array(),
