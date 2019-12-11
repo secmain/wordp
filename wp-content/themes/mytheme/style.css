@@ -233,3 +233,59 @@ a:hover {
 	text-align: center;
 }
 
+.myposthead {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.myposthead p {
+	color: var(--basecolor);
+	font-family: var(--myfont);
+	font-weight: bold;
+}
+
+.mypostlist {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.mypostlist article {
+	width: 45%;
+	margin-bottom: 20px;
+}
+
+.mypostlist figure {
+	margin: 0;
+}
+
+.mypostlist img {
+	height: 180px;
+	width: 200px;
+	object-fit: cover;
+}
+
+.mypostlist h2 {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: var(--f6);
+}
+
+.pagination .nav-links {
+	margin-bottom: 50px;
+	justify-content: center;
+}
+
+.pagination .page-numbers:not(:last-child) {
+	margin-right: 15px;
+}
+
+.pagination a {
+	color: var(--basecolor);
+}
+
+.pagination .current {
+	color: #aaaaaa;
+}
